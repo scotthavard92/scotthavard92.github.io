@@ -1,0 +1,135 @@
+a {text-decoration:none;}
+
+body {
+	font-family: Arial;
+}
+
+.headers {
+	height: 55px;
+	width: 100%;
+	margin:0 0 0 0;
+	border:0 0 0 0;
+	padding:0 0 0 0;
+	color: #FFFFFF; 
+	text-transform: uppercase;
+	text-align: center; 
+	background-color: #000000;
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index:1;
+	
+}
+
+.Subhead {
+	margin-top:0;
+	border-top:0;
+	padding-top:0;
+}
+
+h1 {
+	top:0px;
+	width:100%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 30px;
+	text-align: center;
+}
+
+h2 {
+	width:100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+
+h5 {
+	font-size: 13px;
+	margin-top:0;
+	margin-bottom:0;
+	border-top:0;
+	border-bottom:0;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+#Menu {
+	position: fixed;
+	top: 55px;
+	left: 0px;
+	height: 26px;
+	width:100%;
+	margin-top: 0px;
+	list-style-type: none; 
+	color:#000000;
+	text-align: center;
+	background-color: #FFFFFF;
+	overflow: auto;
+	
+}
+
+
+#Navigation li {
+	display: inline;
+}
+
+#Navigation {
+	padding-left: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+#content {
+	font-size:20px;
+	color:#445668 ;
+	text-align:center;
+	position:static;
+	overflow: auto;
+	margin-top:100px;
+}
+
+#Welcome {
+	margin-top: 41px;
+	margin-bottom: 20px;
+	height: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#Description {
+	margin-right: 60px;
+	margin-left:60px;
+}
+
+#Resume {
+	margin-top: 80px;
+}
+
+#Res_Head2  {
+	font-size: 13px;
+	text-align: center;
+}
+
+#Res_Head2a  li {
+	display: inline;
+}
+
+#Res_Body {
+	font-size: 13px;
+	margin: 5px;
+}
+
+#External_Links {
+	margin-top: 81px;
+}
