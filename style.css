@@ -2,6 +2,10 @@ a {text-decoration:none;}
 
 body {
 	font-family: Arial;
+	background-image: url("oregon-coast.jpg"); 
+	background-size: auto;                   
+    background-repeat:   no-repeat;
+    background-position: center center; 
 }
 
 .headers {
@@ -100,16 +104,23 @@ h5 {
 }
 
 #Welcome {
-	margin-top: 41px;
-	margin-bottom: 20px;
 	height: 50px;
 	text-align: center;
-	font-size: 30px;
+	color: #ffffff;
 }
 
 #Description {
-	margin-right: 60px;
-	margin-left:60px;
+	font-family: caslon;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	margin-right: 180px;
+	margin-left: 180px;
+	min-width: 600px;
+	border-radius: 8px;
+	background-color:rgba(0, 0, 0, 0.4);
+	color: #ffffff;
 }
 
 #Resume {
@@ -132,4 +143,17 @@ h5 {
 
 #External_Links {
 	margin-top: 81px;
+}
+
+.highlightit img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+-moz-opacity: 0.75;
+opacity: 0.75;
+}
+
+
+.highlightit:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
 }
