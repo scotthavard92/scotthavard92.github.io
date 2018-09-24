@@ -1,11 +1,17 @@
-a {text-decoration:none;}
-
 body {
 	font-family: Arial;
 	background-image: url("media/oregon-coast.jpg"); 
 	background-size: auto;                   
     background-repeat:   no-repeat;
     background-position: center center; 
+    background-attachment: fixed;
+}
+
+a {text-decoration:none;}
+ 
+ul {
+  list-style: none;
+  color:#ffffff;
 }
 
 .headers {
@@ -49,71 +55,17 @@ h2 {
 }
 
 h3 {
-	text-align: center;
-	font-size: 30px;
-}
-
-h4 {
-	font-size: 17px;
-	margin-bottom: 5px;
-}
-
-h5 {
-	font-size: 13px;
-	margin-top:0;
-	margin-bottom:0;
-	border-top:0;
-	border-bottom:0;
-	padding-top:0;
-	padding-bottom:0;
-}
-
-#Menu {
-	position: fixed;
-	top: 55px;
-	left: 0px;
-	height: 26px;
-	width:100%;
-	margin-top: 0px;
-	list-style-type: none; 
-	color:#000000;
-	text-align: center;
-	background-color: #FFFFFF;
-	overflow: auto;
-	
-}
-
-
-#Navigation li {
-	display: inline;
-}
-
-#Navigation {
-	padding-left: 0px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-}
-
-#content {
-	font-size:20px;
-	color:#445668 ;
-	text-align:center;
-	position:static;
-	overflow: auto;
-	margin-top:100px;
-}
-
-#Welcome {
-	height: 50px;
-	text-align: center;
-	color: #ffffff;
+	text-align: left;
+	margin-left:20px;
+	font-size: 50px;
+	font-weight: 10px
 }
 
 #Description {
 	font-family: caslon;
 	font-size: 30px;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 125px;
 	margin-bottom: 20px;
 	margin-right: 180px;
 	margin-left: 180px;
@@ -123,26 +75,41 @@ h5 {
 	color: #ffffff;
 }
 
-#Resume {
-	margin-top: 80px;
-}
-
-#Res_Head2  {
-	font-size: 13px;
+#Links_Section {
+	font-family: Helvetica Neue;
+	font-size: 30px;
+	font-weight: 200;
 	text-align: center;
-}
-
-#Res_Head2a  li {
-	display: inline;
-}
-
-#Res_Body {
-	font-size: 13px;
-	margin: 5px;
+	margin-top: 145px;
+	margin-bottom: 80px;
+	margin-right: 0px;
+	margin-left: 0px;
+	min-width: 600px;
+	border-radius: 8px;
+	background-color:rgba(0, 0, 0, 0.8);
+	color: #ffffff;
 }
 
 #External_Links {
 	margin-top: 81px;
+	font-weight: 5px;
+
+}
+
+#Additional_Info {
+	text-align: left;
+	margin-left:20px;
+	font-size: 50px;
+	font-weight: 200;
+}
+
+#Scroll_Down {
+	text-align: center;
+	font-family: Helvetica Neue;
+	height: 70px;
+	font-size: 150px;
+	font-weight: 900;
+	color: #5a97fc;
 }
 
 .highlightit img{
@@ -157,3 +124,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
 -moz-opacity: 1;
 opacity: 1;
 }
+
+a { color:#ffffff }
+a:visited { text-decoration: none; color:#ffffff; }
+a:hover { text-decoration: none; color:#CBCBCB; }
