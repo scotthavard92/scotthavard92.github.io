@@ -1,0 +1,70 @@
+body {
+	font-family: "Helvetica Neue", "Helvetica";
+	text-align:center;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+#prompt {
+	margin-top: 8px;
+	margin-bottom: 12px;
+
+}
+
+#upvote-button {
+	color: #2687e3;
+	font-family: 'Helvetica Neue', 'Helvetica';
+    background-color: transparent;
+    border-color: #2687e3;
+	padding: 6px 12.5px 6px 12.5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 8px 15px 15px 15px;
+    background-image: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#downvote-button {
+	color: #2687e3;
+	font-family: 'Helvetica Neue', 'Helvetica';
+    background-color: transparent;
+    border-color: #2687e3;
+	padding: 6px 14px 6px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 8px 15px 15px 15px;
+    background-image: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#downvote-button:focus {
+	background-color:#cfd6e4
+; 
+}
+
+#upvote-button:focus {
+	background-color:#cfd6e4
+; 
+}
+
+#downvote-button.selected {
+	background-color:#cfd6e4; 
+	outline: none;
+}
+
+#upvote-button.selected {
+	background-color:#cfd6e4; 
+	outline: none;
+}

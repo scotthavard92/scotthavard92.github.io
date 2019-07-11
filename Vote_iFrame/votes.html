@@ -1,0 +1,32 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="prompt"">
+		<p> Is this article helpful? </p>
+	</div>
+	<div class="vote-buttons">
+			<button id="upvote-button">Yes</button>
+			<script>
+				$(document).ready(function() {
+    				$("#upvote-button").click(function(){
+       	 				$('#upvote-button').attr("disabled", true);
+       	 				$('#downvote-button').attr("disabled", true);
+       	 				$('#upvote-button').addClass('selected');
+    				}); 
+				});
+			</script>
+			<button id="downvote-button">No</button>
+				<script>
+				$(document).ready(function() {
+    				$("#downvote-button").click(function(){
+       	 				$('#upvote-button').attr("disabled", true);
+       	 				$('#downvote-buttons').attr("disabled", true);
+       	 				$('#downvote-button').addClass('selected');
+    				}); 
+				});
+			</script>
+	</div>
+</body>
+
