@@ -24,7 +24,7 @@ mixpanel.init("c35254c786d5aace8e884528f6be2ed7");</script>
        	 				$('#upvote-button').attr("disabled", true);
        	 				$('#downvote-button').attr("disabled", true);
        	 				$('#upvote-button').addClass('selected');
-       	 				mixpanel.track("Landing Page Upvote");
+       	 				mixpanel.track("Landing Page Upvote", {"Page Title":"Implement Mixpanel"});
     				}); 
 				});
 			</script>
@@ -35,7 +35,7 @@ mixpanel.init("c35254c786d5aace8e884528f6be2ed7");</script>
        	 				$('#upvote-button').attr("disabled", true);
        	 				$('#downvote-buttons').attr("disabled", true);
        	 				$('#downvote-button').addClass('selected');
-       	 				mixpanel.track("Landing Page Downvote");
+       	 				mixpanel.track("Landing Page Downvote",{"Page Title":"Implement Mixpanel"});
     				}); 
 				});
 			</script>
