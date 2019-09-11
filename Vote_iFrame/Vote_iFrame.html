@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="file:///Users/scotthavard/Documents/CustomerFeedbackForm/feedbackScript.js"></script>
+
+</head>
+<body>
+	<div id="prompt"">
+		<p> Is this page helpful? </p>
+	</div>
+	<div class="vote-buttons">
+			<button id="upvote-button">Yes</button>
+			<script>
+				$(document).ready(function() {
+    				$("#upvote-button").click(function(){
+       	 				$('#upvote-button').attr("disabled", true);
+       	 				$('#downvote-button').attr("disabled", true);
+       	 				$('#upvote-button').addClass('selected');
+
+                // Send upvote data to parent on every button click
+                bindEvent(upvoteButton, 'click', function (e) {
+                  sendMessage('Upvote');
+                });
+    				}); 
+				});
+			</script>
+			<button id="downvote-button">No</button>
+				<script>
+				$(document).ready(function() {
+    				$("#downvote-button").click(function(){
+       	 				$('#upvote-button').attr("disabled", true);
+       	 				$('#downvote-buttons').attr("disabled", true);
+       	 				$('#downvote-button').addClass('selected');
+
+       	 				// Send downvote data to parent on every button click
+                bindEvent(downvoteButton, 'click', function (e) {
+                    sendMessage('Downvote');
+                });
+
+                feedback = formCollect();
+                pageTitle = pageTitle();
+                //pageTitle = "Title"
+                if (typeof feedback !== 'undefined') {
+                  zapRequest(feedback, pageTitle)
+                } 
+
+    				}); 
+				});
+			</script>
+	</div>
+
+  <script>
+    var upvoteButton = document.getElementById('upvote-button');
+        downvoteButton = document.getElementById('downvote-button');
+
+
+  </script>
+</body>
+
