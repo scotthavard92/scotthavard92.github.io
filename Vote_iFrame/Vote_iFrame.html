@@ -39,12 +39,12 @@
 
                 feedback = formCollect();
                 //pageTitle = pageTitle();
-                var pageTitle;
+                var moveTitle;
                 bindEvent(window, 'message', function (e) {
-                  pageTitle = e.data;
+                  moveTitle = e.data;
                 });
                 if (typeof feedback !== 'undefined') {
-                  zapRequest(feedback, pageTitle)
+                  zapRequest(feedback, moveTitle)
                 } 
 
     				}); 
