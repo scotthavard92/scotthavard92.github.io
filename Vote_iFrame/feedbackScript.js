@@ -34,14 +34,6 @@ function bindEvent(element, eventName, eventHandler) {
         }
     }
 
-function pageTitle() {
-	var pageTitle;
-    bindEvent(window, 'message', function (e) {
-        pageTitle = e.data;
-    });
-    return pageTitle;
-}
-
 // Send a message to the parent
 var sendMessage = function (msg) {
     // Make sure you are sending a string, and to stringify JSON
