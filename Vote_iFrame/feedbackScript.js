@@ -38,7 +38,6 @@ function pageTitle() {
 	var pageTitle;
     bindEvent(window, 'message', function (e) {
         pageTitle = e.data;
-        results.innerHTML = pageTitle;
     });
     return pageTitle;
 }
